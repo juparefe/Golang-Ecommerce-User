@@ -1,8 +1,9 @@
 module github.com/juparefe/Golang-Ecommerce-User
 
-go 1.23
+go 1.22.1
 
 require (
+	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/aws/aws-lambda-go v1.46.0 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.25.3 // indirect
 	github.com/aws/aws-sdk-go-v2/config v1.27.7 // indirect
@@ -18,4 +19,5 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.23.2 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.28.4 // indirect
 	github.com/aws/smithy-go v1.20.1 // indirect
+	github.com/go-sql-driver/mysql v1.8.0 // indirect
 )

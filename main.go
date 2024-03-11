@@ -45,6 +45,7 @@ func ExecuteLambda(context context.Context, event events.CognitoEventUserPoolsPo
 		return event, err
 
 	}
+	err = db.SignUpInDb(data)
 	return event, nil
 }
 
