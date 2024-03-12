@@ -24,6 +24,6 @@ func SignUpInDb(sig models.SignUp) error {
 		fmt.Println("Error executing Insert script in Database:", err.Error())
 		return err
 	}
-	fmt.Println("Successfully registration")
+	fmt.Println("Registration complete")
 	return nil
 }

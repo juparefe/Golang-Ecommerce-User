@@ -18,7 +18,7 @@ func GetSecret(secretName string) (models.SecretRDSJson, error) {
 		SecretId: aws.String(secretName),
 	})
 	if err != nil {
-		fmt.Println("Error:", err.Error())
+		fmt.Println("Error getting secret value:", err.Error())
 		return secretData, err
 	}
 	// Procesar el secretValue y guardarlo en secretData
@@ -29,5 +29,4 @@ func GetSecret(secretName string) (models.SecretRDSJson, error) {
 	}
 	fmt.Println("Secret data OK: ", secretData)
 	return secretData, nil
-
 }
